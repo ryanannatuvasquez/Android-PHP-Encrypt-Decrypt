@@ -2,11 +2,13 @@ Encrypt / Decrypt for PHP
 
 ######################
 # Installation
+```json
 {
     "require": {
         "ryanannatuvasquez/android-php-encrypt-decrypt": "dev-master"
     }
 }
+```
 
 ######################
 # Example
