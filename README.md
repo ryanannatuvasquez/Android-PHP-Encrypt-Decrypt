@@ -3,6 +3,7 @@ Encrypt / Decrypt for PHP
 ######################
 # HOW TO USE IT (PHP)
 
+```php
 $mcrypt = new MCrypt();
 
 $mcrypt->setKey($secretKey); // must be 16 bytes
@@ -14,3 +15,4 @@ $encrypted = $mcrypt->encrypt("Text to encrypt");
 /* Decrypt */
 
 $decrypted = $mcrypt->decrypt($encrypted);
+```
