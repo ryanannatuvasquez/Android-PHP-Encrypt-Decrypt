@@ -1,6 +1,6 @@
 <?php
 
-namespace PHP\MCrypt;
+namespace MCrypt;
 
 class MCrypt
 {
