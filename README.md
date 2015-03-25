@@ -5,6 +5,9 @@ Attention!
 
 This was forked from [serpro/Android-PHP-Encrypt-Decrypt](https://github.com/serpro/Android-PHP-Encrypt-Decrypt). 
 
+### What's New?
+- Install using composer
+- Setter for `KEY` and `IV`
 
 ######################
 # Installation
