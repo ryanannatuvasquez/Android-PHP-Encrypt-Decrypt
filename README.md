@@ -1,7 +1,15 @@
 Encrypt / Decrypt for PHP
 
 ######################
-# HOW TO USE IT (PHP)
+# Installation
+{
+    "require": {
+        "ryanannatuvasquez/android-php-encrypt-decrypt": "dev-master"
+    }
+}
+
+######################
+# Example
 
 ```php
 $mcrypt = new MCrypt();
