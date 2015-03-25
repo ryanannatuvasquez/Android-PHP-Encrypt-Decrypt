@@ -1,13 +1,32 @@
 <?php
 
+namespace PHP\MCrypt;
+
 class MCrypt
 {
-    private $iv = 'fedcba9876543210'; #Same as in JAVA
-    private $key = '0123456789abcdef'; #Same as in JAVA
-
+    private $iv;
+    private $key;
 
     function __construct()
     {
+    }
+
+    /**
+     * Set private key
+     * @param [type] $string [description]
+     */
+    function setKey($string)
+    {
+        $this->key = $string;
+    }
+
+    /**
+     * set IV hash
+     * @param [type] $string [description]
+     */
+    function setIv($string)
+    {
+        $this->iv = $string;
     }
 
     /**
@@ -17,6 +36,10 @@ class MCrypt
      */
     function encrypt($str, $isBinary = false)
     {
+        if($this->iv === null || $this->key === null){
+            return false;
+        }
+
         $iv = $this->iv;
         $str = $isBinary ? $str : utf8_decode($str);
 
@@ -38,6 +61,10 @@ class MCrypt
      */
     function decrypt($code, $isBinary = false)
     {
+        if($this->iv === null || $this->key === null){
+            return false;
+        }
+
         $code = $isBinary ? $code : $this->hex2bin($code);
         $iv = $this->iv;
 
@@ -48,7 +75,7 @@ class MCrypt
 
         mcrypt_generic_deinit($td);
         mcrypt_module_close($td);
-
+    
         return $isBinary ? trim($decrypted) : utf8_encode(trim($decrypted));
     }
 
