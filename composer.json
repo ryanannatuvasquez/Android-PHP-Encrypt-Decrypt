@@ -1,0 +1,12 @@
+{
+    "name": "ryanannatuvasquez/android-php-encrypt-decrypt",
+    "description": "Encrypt / Decrypt Between Android and PHP and vice-versa",
+    "authors": [
+        {
+            "name": "ryanannatuvasquez",
+            "email": "ryanannatuvasquez@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
