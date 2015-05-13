@@ -32,6 +32,5 @@ $mcrypt->setIv($secretIv); // must be 16 bytes
 $encrypted = $mcrypt->encrypt("Text to encrypt");
 
 /* Decrypt */
-
 $decrypted = $mcrypt->decrypt($encrypted);
 ```
